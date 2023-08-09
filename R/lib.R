@@ -14,6 +14,7 @@ convert_latlon <- function(x){
     out <- do.call(rbind, out)
     out <- apply(out, 1, strsplit, split = " ")
     out <- lapply(out, unlist)
+    out <- lapply(out, function(x) x[x != ""])
     out <- lapply(out, as.numeric)
     out <- lapply(out, convert_degminsec)
     out <- do.call(rbind, out)

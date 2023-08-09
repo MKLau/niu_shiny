@@ -6,5 +6,5 @@ server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9568624
 bundleId:
-url: https://harvardforest.shinyapps.io/niu_shiny/
+url: https://uhwo.shinyapps.io/niu_shiny/
 version: 1
