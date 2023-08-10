@@ -1,6 +1,3 @@
-pkgs <- c("leaflet", "readxl", "magrittr", "shiny")
-sapply(pkgs, library, character.only = TRUE)
-
 convert_degminsec <- function(x){
     lat <- x[1] + (x[2] + x[3]/60)/60
     lon <- x[4] + (x[5] + x[6]/60)/60

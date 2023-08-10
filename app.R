@@ -1,3 +1,7 @@
+library("leaflet")
+library("readxl")
+library("magrittr")
+library("shiny")
 source("R/lib.R")
 
 ## Load data
