@@ -1,16 +1,14 @@
-pkgs <- c("leaflet", "readxl", "magrittr", "htmlwidgets", "shiny")
-sapply(pkgs, library, character.only = TRUE)
 source("R/lib.R")
 
 ## Load data
 
-load("data/niu_map_data.save")
+tab.niu <- read.csv("data/niu_data.csv")
 
 ## Shiny App
 
 ui <- fluidPage(
 
-    titlePanel("Uluniu Collection Locations 2024"),
+    titlePanel("Uluniu Collection Locations"),
     leafletOutput("niumap"),    
     sidebarLayout(
         sidebarPanel("Click each point for collection data."),
@@ -18,7 +16,6 @@ ui <- fluidPage(
     )
 
 )
-
 
 server <- function(input, output, session){
 

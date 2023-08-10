@@ -36,3 +36,4 @@ tab.niu <- rbind(tab.niu, tab.niu2)
 tab.niu <- tab.niu[!(apply(tab.niu, 1, function(x) all(is.na(x)))), ]
 
 save(tab.niu, file = "data/niu_map_data.save")
+write.csv(tab.niu, file = "data/niu_data.csv", row.names = FALSE)
